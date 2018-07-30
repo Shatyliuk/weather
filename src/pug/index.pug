@@ -1,0 +1,24 @@
+extends /layout/main
+block variables
+    - var title = 'WeatherJs'
+block content
+    .main(id='app')
+        .card.indigo.darken-1
+            .card-content.white-text.cardHeading
+                span.card-title.center-align Waether App
+                .input-field
+                    input(id="city" type="text").validate.white-text
+                    label(for="city") City
+            .card-tabs
+                ul.tabs.center-align.tabs-transparent
+                    li.tab
+                        a(href='#weather').white-text Weather
+                    li.tab
+                        a(href='#forecast').white-text Forecast
+            .card-content.grey.lighten-2
+                div(id='weather').center-align
+                div(id='forecast').center-align
+                    
+            
+
+        
